@@ -1,0 +1,262 @@
+@import "https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #2f4f4f;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+a {
+  color: #2f4f4f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: tomato;
+}
+
+h2, h3, #box-text p, #box-nav li, #box-text li, dt, dd, figcaption {
+  letter-spacing: .025rem;
+}
+
+body.index {
+  height: 100vh;
+  background-image: url("victor-martin-6lI6YnLC9-k-unsplash.c6afe08e.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px dotted #ccc;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+body.index header {
+  border-bottom-width: 0;
+}
+
+#box-menu {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+}
+
+h1 {
+  font-family: Philosopher, sans-serif;
+  font-size: 2rem;
+}
+
+#time {
+  letter-spacing: .1rem;
+  font-weight: 300;
+}
+
+#box-menu > div:last-of-type {
+  gap: 20px;
+  display: flex;
+}
+
+button {
+  color: #2f4f4f;
+  background-color: #0000;
+  border-width: 0;
+  font-size: 1.4rem;
+}
+
+#box-nav {
+  width: 100%;
+  border-top: 2px solid #2f4f4f;
+  display: none;
+}
+
+body.index #box-nav {
+  position: absolute;
+}
+
+#box-nav li {
+  background-color: #fff;
+  border-bottom: 1px dotted #789;
+  padding: 10px;
+  list-style-type: none;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+#box-text {
+  width: 80vw;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+body.index #box-text {
+  text-align: center;
+  width: 80vw;
+  justify-content: center;
+  margin-top: 7.5vh;
+  display: flex;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: Philosopher, sans-serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: Philosopher, sans-serif;
+  font-size: 1.25rem;
+}
+
+#box-text p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#box-text p.article {
+  margin-bottom: 10px;
+}
+
+#box-text p.source {
+  text-align: right;
+  font-size: .8rem;
+}
+
+#box-text li {
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+#box-text li ul {
+  margin-left: 30px;
+}
+
+#box-text li li {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: .9rem;
+  font-weight: normal;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+
+#box-text li li:first-of-type {
+  padding-top: 10px;
+}
+
+dd {
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+
+figure {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+figure.video div {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+figure.video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding-left: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: .8rem;
+}
+
+.sitename {
+  font-family: Philosopher, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px dotted #ccc;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15vw;
+  padding: 20px 40px;
+  font-size: .9rem;
+  display: flex;
+  position: sticky;
+  top: 100vh;
+}
+
+body.index footer {
+  border-top-width: 0;
+}
+
+footer div:first-of-type {
+  align-self: center;
+}
+
+footer div:last-of-type {
+  text-align: left;
+}
+
+footer .sitename {
+  border-bottom: 2px solid #2f4f4f;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+footer li {
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+@media (min-width: 641px) {
+  body.index {
+    background-position: 50% 70%;
+  }
+
+  #box-text {
+    width: 70vw;
+  }
+
+  figure.video iframe {
+    padding-left: 0;
+  }
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
